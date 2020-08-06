@@ -81,9 +81,6 @@ ul {
     text-align: 5px;
 }
 
-.row {
-    flex: 1;
-}
 
 #portfolio {
     text-align: center;
@@ -124,10 +121,11 @@ ul {
     margin-top: 30px;
 }
 
-.row {
-flex-wrap: wrap;
-flex: 1 200px;
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
 }
+
 
 
 /*  Media Queries */
@@ -136,8 +134,12 @@ flex: 1 200px;
 
 .main-header,
 .main-nav,
-.row {
+.container {
     display:flex;
+}
+
+.col {
+	flex: 1 50%;
 }
 
 .banner,
@@ -151,7 +153,7 @@ flex: 1 200px;
 }
 
 .main-header,
-.row {
+.container {
     width: 90%;
     margin: 0 auto;
 }
@@ -186,23 +188,35 @@ flex: 1 200px;
     justify-content: space-between;
 }
 
-.banner {
-   flex-direction: row-reverse; 
-}
-
 .main-header,
-.row {
+.container {
 width: 80%;
-max-width: 1150px;
-
 }
-
 
 .main-nav {
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
 }
+
+.banner {
+   flex-direction: row-reverse; 
+}
+
+.container {
+    flex-wrap: wrap;
+    flex: 1 200px;
+}
+
+.col {
+	flex-basis: 0;
+}
+
+.first-graph {
+	flex-grow: 1.4;
+}
+
+
 
 
     /* Float CLearfix */
