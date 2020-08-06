@@ -89,7 +89,7 @@ ul {
 	display: block;
 	padding: 10px 15px;
 }
-.main-nav  {
+.first-ul  {
 	font-size: .95em;
 	text-transform: uppercase;
     margin: 15px;
@@ -142,7 +142,9 @@ ul {
 
 @media (min-width: 768px) { 
 
-.main-nav,
+.top-nav,
+.first-ul,
+.second-ul,
 .bottom-nav,
 .container {
     display:flex;
@@ -154,7 +156,7 @@ ul {
 }
 
 
-.main-nav,
+.top-nav,
 .bottom-nav {
 	flex-direction:column;
 	align-items: center;
@@ -164,7 +166,7 @@ ul {
     flex: 1 50%;
 }
 
-.main-nav,
+.top-nav,
 .main-footer,
 .container {
     width: 90%;
@@ -176,13 +178,17 @@ ul {
 
 @media (min-width: 1024px) {
 
-.main-nav,
+.top-nav,
 .bottom-nav {
     flex-direction:row;
-    align-content: space-between;
 }
 
-.main-nav,
+.first-ul,
+.second-nav {
+    align-self: flex-end;
+}
+
+.top-nav,
 .bottom-nav,
 .container {
 width: 80%;
