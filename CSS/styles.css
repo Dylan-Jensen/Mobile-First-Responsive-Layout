@@ -30,6 +30,10 @@ header {
     text-align: center;
 }
 
+main {
+    display: block;
+}
+
 p {
     margin: 20px 20px;
     padding-left: 20px;
@@ -42,6 +46,11 @@ h2 {
     font-weight: 400  
 }
 
+img {
+    max-width: 100%;
+}
+
+
 footer {
     text-align: center;
     padding-top: 1.3rem;
@@ -53,8 +62,6 @@ footer {
 
 ul {
     list-style-type: none;
-    padding: 20px 20px;
-    flex-direction: row;
 }
 
 .name {
@@ -64,8 +71,7 @@ ul {
 .main-nav {
 	margin-top: 5px;
 }
-.name,
-.main-nav  {
+.name {
 	text-align: center;
 	display: block;
 	padding: 10px 15px;
@@ -73,12 +79,10 @@ ul {
 .main-nav  {
 	font-size: .95em;
 	text-transform: uppercase;
-}
-
-.main-nav {
     margin: 15px;
-    padding: 5px 5px;
+    padding: 0;
     text-align: 5px;
+    display: inline-block;
 }
 
 
@@ -88,12 +92,6 @@ ul {
     margin: 100px 100px;
 
 }
-
-.image {
-	border-radius: 5px;
-}
-
-
 
 /* ---- Layout Containers ---- */
 
@@ -105,17 +103,12 @@ ul {
 .main-footer {
 	text-align: center;
 }
-.banner-p {
-	color: #fff;
-	padding: 3.2em 0;
-    margin-bottom: 48px;
+
+.banner {
+    margin: 3rem 1em;
     background: rgba(207, 207, 207, .2)
 }
 
-.banner-p {
-    margin-bottom: 0;
-    color: black;
-}
 .main-footer {
 	padding: 2em 0;
     margin-top: 30px;
@@ -138,18 +131,19 @@ ul {
     display:flex;
 }
 
-.col {
-	flex: 1 50%;
+.banner {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.banner,
-.banner-p {
-    display: flex;
-}
 
 .main-header {
 	flex-direction:column;
 	align-items: center;
+}
+
+.col {
+	flex: 1 50%;
 }
 
 .main-header,
@@ -158,19 +152,6 @@ ul {
     margin: 0 auto;
 }
 
-.banner,
-.banner-p {
-    width: 90%;
-    margin: 0 auto;
-}
-
-
-.main-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    flex-direction: row-reverse;
-}
 
 .footer-nav {
     border-top: 1px solid rgb(138, 138, 138, 25%);
@@ -193,16 +174,6 @@ ul {
 width: 80%;
 }
 
-.main-nav {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-around;
-}
-
-.banner {
-   flex-direction: row-reverse; 
-}
-
 .container {
     flex-wrap: wrap;
     flex: 1 200px;
@@ -211,13 +182,6 @@ width: 80%;
 .col {
 	flex-basis: 0;
 }
-
-.first-graph {
-	flex-grow: 1.4;
-}
-
-
-
 
     /* Float CLearfix */
 
