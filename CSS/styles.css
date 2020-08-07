@@ -12,7 +12,7 @@ a:link {
 }
 
 a:hover {
-    color:rgba(255, 0, 0, .6);
+    color:rgba(255, 0, 0, 0.6);
 }
 
 a:active {
@@ -170,7 +170,6 @@ ul {
     width: 90%;
     margin: 0 auto;
     }   
-
 
 }
 
