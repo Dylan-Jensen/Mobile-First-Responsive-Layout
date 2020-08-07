@@ -199,13 +199,6 @@ width: 80%;
 .col {
     flex-basis: 0;
     flex-wrap: wrap;
-}
+ }
 
-    /* Float CLearfix */
-
-    #clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
 }
