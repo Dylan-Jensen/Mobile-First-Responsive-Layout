@@ -114,7 +114,6 @@ nav a {
 	text-transform: uppercase;
     margin: 15px;
     padding: 15px;
-    text-align: 5px;
 }
 
 .shadow { 
@@ -210,7 +209,7 @@ nav a {
 
 .first-ul {
     margin: auto 0;
-    width: 90%s;
+    width: 90%;
 }
 
 .banner {
