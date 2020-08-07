@@ -68,7 +68,7 @@ margin: 0 auto;
 font-weight: 700;
 text-transform: uppercase;
 background-color: rgba(207, 207, 207, .2);
-border-bottom: 2px solid rgba(151, 151, 151, 0.8);
+border-bottom: 2px solid rgba(64, 61, 255, 0.8);
 }
 nav a {
     padding: 20px 15px;
@@ -99,6 +99,8 @@ ul {
     text-align: 5px;
     display: inline-block;
 }
+
+
 
 .bottom-nav {
     display: flex;
@@ -138,14 +140,11 @@ ul {
 	text-align: center;
 }
 
-.banner {
+.banner{
     margin: 1em 1em;
     background: rgba(207, 207, 207, .2)
 }
 
-.banner p {
-    padding-right: 50em;
-}
 
 .main-footer {
 	padding: 2em 0;
@@ -178,7 +177,8 @@ ul {
 
 .banner p {
     flex-basis: 80%;
-    text-align: left;
+    text-align: center;
+    padding-right: 50rem;
 }
 
 
