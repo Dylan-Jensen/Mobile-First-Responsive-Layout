@@ -77,6 +77,7 @@ nav a {
 
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .name {
@@ -87,7 +88,8 @@ ul {
 	display: block;
 	padding: 10px 15px;
 }
-.first-ul  {
+
+.first-ul {
 	font-size: .95em;
 	text-transform: uppercase;
     margin: 15px;
@@ -97,17 +99,32 @@ ul {
 }
 
 .bottom-nav {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
     border-top: 1px solid rgb(138, 138, 138, 25%);
-    display: block;
     padding: 10px;
-    text-align: center;
-  }
+}
+
+
+.bottom-nav a {
+    padding: 5px 15px;
+}
+
+.bottom-nav li {
+    display: inline-block;
+}
+
+.bottom-nav .full-nav {
+    display: none;
+}
 
 
 #portfolio {
     text-align: center;
     text-transform: uppercase;
-    margin: 100px 100px;
+    margin: 100px auto;
 
 }
 
@@ -153,58 +170,66 @@ ul {
     flex-direction: row-reverse;
 }
 
+.banner p {
+    flex-basis: 60%;
+    text-align: left;
+}
 
-.top-nav,
-.bottom-nav {
+
+.top-nav
+{
 	flex-direction:column;
 	align-items: center;
 }
 
+.container {
+    flex-wrap: wrap;
+}
+
 .col {
-    flex: 1 100vh;
+    flex-basis: 50%;
 }
 
 .top-nav,
-.bottom-nav,
 .main-footer,
 .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    }   
+    } 
+    
+.bottom-nav .top {
+    display: none;
+}
+
+.bottom-nav .full-nav {
+    display: inline-block;
+}
 
 }
 
 @media (min-width: 1024px) {
+
 
 .top-nav,
 .bottom-nav {
     flex-direction:row;
 }
 
-.first-ul,
-.second-ul {
-    align-self: flex-end;
-}
-
-.banner p {
-    flex-basis: 60%;
-    text-align: left;
-}
 
 .top-nav,
-.bottom-nav,
-.container {
-width: 80%;
+.bottom-nav {
+    align-content: center;
+    justify-content: space-between;
 }
 
-.container {
-    flex-wrap: wrap;
-    flex: 1 200px;
+.top-nav a,
+.bottom-nav a {
+    margin: auto;
 }
 
 .col {
-    flex-basis: 0;
-    flex-wrap: wrap;
- }
+    flex-basis: 33.333%;
+}
+
 
 }
