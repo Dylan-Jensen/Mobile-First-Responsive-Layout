@@ -171,11 +171,10 @@ nav a {
     display: none;
 }
 
-#portfolio {
+.port {
     text-align: center;
     text-transform: uppercase;
-    margin: 100px auto;
-
+    margin: 50px auto;
 }
 
 /* ---- Layout Containers ---- */
@@ -261,6 +260,7 @@ nav a {
     margin-left: 0;
 }
 
+
 .container {
     flex-wrap: wrap;
 }
@@ -282,7 +282,9 @@ nav a {
     flex-direction: column;
 }
 
-
+.port {
+    margin: 75px 0;
+}
 
 .bottom-nav .top {
     display: none;
@@ -318,6 +320,10 @@ nav a {
 .top-nav a,
 .bottom-nav a {
     margin: auto;
+}
+
+.port {
+    margin: 100px 0;
 }
 
 .col {
