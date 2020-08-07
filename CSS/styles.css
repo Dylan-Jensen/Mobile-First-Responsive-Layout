@@ -67,6 +67,8 @@ nav li {
 margin: 0 auto;
 font-weight: 700;
 text-transform: uppercase;
+background-color: rgba(207, 207, 207, .2);
+border-bottom: 2px solid rgba(151, 151, 151, 0.8);
 }
 nav a {
     padding: 20px 15px;
@@ -137,8 +139,12 @@ ul {
 }
 
 .banner {
-    margin: 3rem 1em;
+    margin: 1em 1em;
     background: rgba(207, 207, 207, .2)
+}
+
+.banner p {
+    padding-right: 50em;
 }
 
 .main-footer {
@@ -171,7 +177,7 @@ ul {
 }
 
 .banner p {
-    flex-basis: 60%;
+    flex-basis: 80%;
     text-align: left;
 }
 
@@ -195,7 +201,7 @@ ul {
 .container {
     width: 100%;
     margin: 0 auto;
-    } 
+}
     
 .bottom-nav .top {
     display: none;
