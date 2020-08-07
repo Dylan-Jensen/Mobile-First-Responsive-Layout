@@ -8,10 +8,15 @@
 
 a:link {
     text-decoration: none;
+    color: #000;
 }
 
 a:hover {
-    color: tomato;
+    color:rgba(255, 0, 0, .6);
+}
+
+a:active {
+    color: blue;
 }
 
 /*  Base Element Styles */
@@ -26,7 +31,8 @@ body {
     margin: 10px;
 }
 
-header {
+header,
+footer {
     text-align: center;
 }
 
@@ -48,14 +54,6 @@ h2 {
 
 img {
     max-width: 100%;
-}
-
-
-footer {
-    text-align: center;
-    padding-top: 1.3rem;
-    padding-bottom: 1.5rem;
-
 }
 
 /* Navigation */
@@ -163,7 +161,7 @@ ul {
 }
 
 .col {
-    flex: 1 50%;
+    flex: 1 100vh;
 }
 
 .top-nav,
@@ -184,7 +182,7 @@ ul {
 }
 
 .first-ul,
-.second-nav {
+.second-ul {
     align-self: flex-end;
 }
 
