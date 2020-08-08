@@ -92,10 +92,6 @@ nav li {
     border-bottom: 2px solid rgba(64, 61, 255, 0.8);
 }
 
-li:hover a {
-    color: lightcoral;
-}
-
 nav a {
     display: block;
 }
